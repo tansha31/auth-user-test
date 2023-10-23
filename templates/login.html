@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block title %} Login {% endblock title %} {% block content %}
+<div class="container col-md-4 mt-5 border rounded-5 px-5 py-5">
+  <h3 class="text-center mb-5">Login</h3>
+  <form action="/login" method="post">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password" id="exampleInputPassword1" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>
+{% endblock content %}
